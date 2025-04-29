@@ -5,7 +5,7 @@ FROM python:3.8-slim
 WORKDIR /app
 
 # Copiar los archivos de la aplicación al contenedor
-COPY . .
+COPY . /app
 
 # Instalar las dependencias
 RUN pip install --no-cache-dir -r requirements.txt
